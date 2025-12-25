@@ -56,25 +56,31 @@
         }
 
         h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 12px;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 16px;
             background: linear-gradient(135deg, #ff6b35 0%, #f7931a 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            letter-spacing: -0.01em;
         }
 
         .subtitle {
-            font-size: 1.1rem;
-            color: #a0a0a0;
-            margin-bottom: 8px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00ff88 0%, #0066cc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
             line-height: 1.6;
         }
 
         .description {
-            font-size: 0.95rem;
-            color: #808080;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #cccccc;
             margin-bottom: 40px;
         }
 
@@ -300,7 +306,15 @@
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .description {
+                font-size: 1rem;
             }
 
             .profile-image {
@@ -329,7 +343,7 @@
         
         <!-- Subtitle -->
         <p class="subtitle">Admin : Mesa Capital</p>
-        <p class="description">We're Here For Your Crypto Journey ...</p>
+        <p class="description"></p>
 
         <!-- Main Link (e.g., Telegram) -->
         <a href="https://t.me/+8vjXvJ-BsAwxNzhl" class="main-link" target="_blank" rel="noopener">
@@ -338,7 +352,7 @@
                 <div class="online-indicator"></div>
             </div>
             <div class="link-content">
-                <div class="link-title">
+                <div class="link-title subtitle">
                     Mesa Capital
                 </div>
                 <div class="link-status">
