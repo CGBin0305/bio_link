@@ -36,6 +36,7 @@
             transform: translate(-50%, -50%);
             z-index: 0;
             filter: blur(8px) brightness(0.4);
+            pointer-events: none;
         }
 
         /* Vignette Effect */
@@ -401,6 +402,7 @@
             height: 18px;
             fill: rgba(255, 255, 255, 0.5);
         }
+        
 
         @media (max-width: 768px) {
             .container {
@@ -409,6 +411,19 @@
 
             h1 {
                 font-size: 2rem;
+            }
+
+             .bg-video {
+                display: none;
+            }
+
+            body {
+                background: radial-gradient(
+                    circle at top,
+                    #0f2027,
+                    #203a43,
+                    #2c5364
+                );
             }
         }
     </style>
@@ -420,7 +435,12 @@
     </div>
 
     <!-- Background Video -->
-    <video id="bg-video" loop muted>
+    <video id="bg-video" 
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline>
         <source src="https://r2.guns.lol/b5323528-6847-45b0-a3a6-7b3a2d08ffab.mp4" type="video/mp4">
     </video>
 
